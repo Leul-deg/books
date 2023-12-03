@@ -12,6 +12,7 @@ const NavBar = () => {
   return <HStack height={'80px'} spacing={5} paddingX={5}>
     <Link to={'/'}><Image src={ colorMode === "dark" ? logoDark : logoWhite} boxSize={'40px'} borderRadius={5}/></Link>
     <SearchBox />
+    <h1>I see fire in side the mountain</h1>
     <ColorModeSwitch />
   </HStack>
 }
