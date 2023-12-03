@@ -14,7 +14,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <ChakraProvider theme={theme}>
       <ColorModeScript initialColorMode={theme.config.initialColorMode} />
       <RouterProvider router={router} />
-
     </ChakraProvider>
   </React.StrictMode>,
 )

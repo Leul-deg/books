@@ -4,16 +4,18 @@ import { BsSearch } from 'react-icons/bs'
 
 
 const SearchBox = () => {
-  // const searchBoxRef = useRef<HTMLInputElement>(null)
+  const searchBoxRef = useRef(null)
 
   return <form onSubmit={(event) => {
-      event.preventDefault()
+    event.preventDefault()
     }}>
-    <InputGroup>
+     <InputGroup>
       <InputLeftElement children={<BsSearch />}/>
+      <Input ref={searchBoxRef} placeholder='Search Books...' borderRadius={10} variant={'filled'}/>
     </InputGroup> 
   </form>
   
 }
 
 export default SearchBox
+  
