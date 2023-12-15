@@ -7,7 +7,7 @@ export const axiosInstance = axios.create({
     key: process.env.key,
   }
 })
-
+  
 export interface FetchResponse<T> {
   count: number
   next: string

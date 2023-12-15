@@ -11,4 +11,3 @@ const ColorModeSwitch = () => {
 }
 
 export default ColorModeSwitch
-  
