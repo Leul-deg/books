@@ -1,5 +1,4 @@
 import { create } from "zustand";
-import { Ordering } from "../../shared/services/game-service";
 
 // export interface GameQuery {
 //   genreId?: number
@@ -16,7 +15,7 @@ import { Ordering } from "../../shared/services/game-service";
 //   setSearchQuery: (query: string) => void;
 // }
 
-const useGameQueryStore = create<GameQueryStore>(set => ({
+const useGameQueryStore = create(set => ({
   gameQuery: {},
   setGenreId: genreId => set(() => ({ gameQuery: { genreId } })),
   setPlatformId: platformId => set(store => ({ gameQuery: { ...store.gameQuery, platformId } })),
