@@ -6,7 +6,7 @@ import useGameQueryStore from '../state-management/stores/gameQueryStore'
 
 const SearchBox = () => {
   const setSearchQuery = useGameQueryStore(s => s.setSearchQuery);
-  const searchBoxRef = useRef<HTMLInputElement>(null)
+  const searchBoxRef = useRef(null)
 
   return <form onSubmit={(event) => {
       event.preventDefault()
